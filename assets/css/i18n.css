@@ -1,0 +1,105 @@
+.lang-switch {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    font-family: "Barlow", Arial, sans-serif;
+}
+
+.lang-switch__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+    transition: background 0.2s ease;
+}
+
+.lang-switch__toggle:hover,
+.lang-switch.is-open .lang-switch__toggle {
+    background: #aa8453;
+}
+
+.lang-switch__menu {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 10px);
+    min-width: 180px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.2s ease;
+}
+
+.lang-switch.is-open .lang-switch__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-switch__option {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #1c1c1c;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.lang-switch__option:hover {
+    background: #f4ece2;
+}
+
+.lang-switch__option.is-active {
+    background: #aa8453;
+    color: #fff;
+}
+
+html[lang="bn"] body,
+html[lang="bn"]
+    :is(h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label, td, th):not([class*="fa-"]):not(
+        .fa
+    ) {
+    font-family: "Noto Sans Bengali", "Nirmala UI", "Vrinda", sans-serif !important;
+}
+
+html[lang="hi"] body,
+html[lang="hi"]
+    :is(h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label, td, th):not([class*="fa-"]):not(
+        .fa
+    ) {
+    font-family: "Noto Sans Devanagari", "Nirmala UI", "Mangal", sans-serif !important;
+}
+
+html[lang="ja"] body,
+html[lang="ja"]
+    :is(h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label, td, th):not([class*="fa-"]):not(
+        .fa
+    ) {
+    font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif !important;
+}
+
+@media (max-width: 575px) {
+    .lang-switch {
+        left: 12px;
+        bottom: 12px;
+    }
+}

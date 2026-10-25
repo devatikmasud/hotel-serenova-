@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Atik Masud" />
+        <meta name="description" content="Serenova - Hotel Booking" />
+        <title>Serenova - Hotel Booking</title>
+        <link rel="shortcut icon" href="assets/img/favicon.svg" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+        <link rel="stylesheet" href="assets/css/mousecursor.css" />
+        <link rel="stylesheet" href="assets/css/meanmenu.css" />
+        <link rel="stylesheet" href="assets/css/odometer.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/nice-select.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/i18n.css" />
+    </head>
+    <body>
+        <div id="preloader">
+            <div class="preloader-content">
+                <img src="assets/img/logo/black-logo.svg" alt="Hotel Logo" class="preloader-logo" />
+                <div class="spinner"></div>
+                <p>Booking your experience...</p>
+            </div>
+        </div>
+        <button id="back-top" class="back-to-top show">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                            feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact d-xl-block">
+                            <h4 class="d-xl-block">Contact Info</h4>
+                            <ul class="d-xl-block">
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"
+                                            ><span class="mailto:info@example.com">info@example.com</span></a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+11002345909">+11002345909</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+        <div class="header-top-section-3 style-bg">
+            <div class="container-fluid">
+                <div class="header-top-wrapper-3 style-inner">
+                    <div class="header-left">
+                        <ul class="list">
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+093783575222">+09 378 357 5222</a>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Elgin Street, 6391, Celina, Delaware
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header-sticky" class="header-1 header-3">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                                </a>
+                                <a href="index.html" class="header-logo-2">
+                                    <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right style-3 d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="news-details.html"> Pages </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="room-details.html">
+                                                            Room
+                                                            <i class="fas fa-angle-right"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="room.html"> Our Room</a></li>
+                                                            <li><a href="room-details.html">Room Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="facilitie.html">Hotel Facilities</a></li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team-details.html">
+                                                            Team
+                                                            <i class="fas fa-angle-right"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="testimonial.html">Our Testimonial</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="service-details.html"> Service </a>
+                                                <ul class="submenu">
+                                                    <li><a href="service.html">Our Service</a></li>
+                                                    <li>
+                                                        <a href="service-details.html">Service Details</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="news-details.html"> Blog </a>
+                                                <ul class="submenu">
+                                                    <li><a href="news-grid.html">Blog Grid</a></li>
+                                                    <li><a href="news.html">Blog Standard</a></li>
+                                                    <li><a href="news-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn style-3"> BOOK NOW </a>
+                            </div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url(&quot;assets/img/breadcrumb.jpg&quot;)">
+            <div class="container">
+                <div class="page-heading">
+                    <div class="breadcrumb-sub-title">
+                        <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">About Us</h1>
+                    </div>
+                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="index.html"> Home </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="about-section section-padding fix section-bg">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="about-image">
+                                <img src="assets/img/home-1/about/about-1.jpg" alt="img" />
+                                <div class="shape">
+                                    <img src="assets/img/home-1/about/shape.png" alt="img" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="section-title mb-0">
+                                    <span class="sub-title wow fadeInUp">The Heart of Hospitality</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Welcome To a World of <br />
+                                        Warmth & Elegance Hotel
+                                    </h2>
+                                </div>
+                                <p class="text wow fadeInUp" data-wow-delay=".3s">
+                                    Welcome to arlux, your trusted platform for discovering and booking the best hotels
+                                    around the world. Since our journey began, we’ve been committed to making travel
+                                    easier, more comfortable, and affordable for everyone
+                                </p>
+                                <div class="list-item wow fadeInUp" data-wow-delay=".5s">
+                                    <ul class="list">
+                                        <li>
+                                            <i class="fa-solid fa-circle-chevron-right"></i>
+                                            Easy and secure online booking
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-chevron-right"></i>
+                                            Exclusive discounts and offers
+                                        </li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li>
+                                            <i class="fa-solid fa-circle-chevron-right"></i>
+                                            24/7 customer support
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-chevron-right"></i>
+                                            Flexible cancellation policies
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="hero-button-item wow fadeInUp"
+                                    data-wow-delay=".3s bg-cover"
+                                    style="background-image: url(assets/img/home-1/about/radial-bg.jpg)"
+                                >
+                                    <div class="top-shape">
+                                        <img src="assets/img/home-1/about/bg-shape.png" alt="img" />
+                                    </div>
+                                    <a href="about.html" class="theme-btn">Know more about us</a>
+                                    <span class="button-text">
+                                        <span class="me-3 d-line">view reels</span>
+                                        <a
+                                            href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+                                            class="video-btn ripple video-popup"
+                                        >
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hotel-facilities-section section-padding fix">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-1.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-1.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                                <h3>facilities</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-2.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-2.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-restroom"></i>
+                                </div>
+                                <h3>Spa & Beauty</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-3.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-3.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-golf-ball-tee"></i>
+                                </div>
+                                <h3>Fairway & Flora</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-4.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-4.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+                                <h3>Fitness & Gym</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-5.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-5.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-person-swimming"></i>
+                                </div>
+                                <h3>Reflecting Pool</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="hotel-facilities-items">
+                            <div class="facilities-image">
+                                <img src="assets/img/home-1/room/faciliti-6.jpg" alt="img" />
+                                <img src="assets/img/home-1/room/faciliti-6.jpg" alt="img" />
+                            </div>
+                            <div class="facilities-content">
+                                <div class="icon">
+                                    <i class="fa-solid fa-car-rear"></i>
+                                </div>
+                                <h3>Guest Parking</h3>
+                                <p>
+                                    This is the dolor sit amet adipisicing elit. Ducimus corrupti sit amet tempore
+                                    placeat ipsa. This is the dolor sit amet adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="marque-section fix">
+            <div class="scrolling-wrap">
+                <div class="comm">
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Modern City Hotel</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Best Luxury Resort</div>
+                    <div class="cmn-textslide">
+                        <i class="fa-sharp fa-solid fa-star"></i> Luxury Hotel in California
+                    </div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                </div>
+                <div class="comm">
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Modern City Hotel</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Best Luxury Resort</div>
+                    <div class="cmn-textslide">
+                        <i class="fa-sharp fa-solid fa-star"></i> Luxury Hotel in California
+                    </div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                </div>
+                <div class="comm">
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Modern City Hotel</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Best Luxury Resort</div>
+                    <div class="cmn-textslide">
+                        <i class="fa-sharp fa-solid fa-star"></i> Luxury Hotel in California
+                    </div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                    <div class="cmn-textslide"><i class="fa-sharp fa-solid fa-star"></i> Health and Fitness</div>
+                </div>
+            </div>
+        </div>
+        <section
+            class="testimonial-section style-inn section-padding fix bg-cover"
+            style="background-image: url(assets/img/home-1/testimonial/bg.jpg)"
+        >
+            <div class="container">
+                <div class="testimonial-wrapper style-inner">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="testimonial-card-item scale-animation">
+                                <div class="swiper testimonial-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="content">
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>
+                                                    From the moment we arrived, every detail was flawless. The staff
+                                                    anticipated our every need, and the suite was pure perfection. We’ll
+                                                    be back soon!"
+                                                </p>
+                                                <div class="client-info-item">
+                                                    <div class="info-item">
+                                                        <img src="assets/img/home-1/testimonial/01.png" alt="img" />
+                                                        <div class="content">
+                                                            <h5>Marvin McKinney</h5>
+                                                            <span>Product Manager</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="quate-image">
+                                                        <img src="assets/img/home-1/icon/07.svg" alt="img" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="content">
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>
+                                                    From the moment we arrived, every detail was flawless. The staff
+                                                    anticipated our every need, and the suite was pure perfection. We’ll
+                                                    be back soon!"
+                                                </p>
+                                                <div class="client-info-item">
+                                                    <div class="info-item">
+                                                        <img src="assets/img/home-1/testimonial/01.png" alt="img" />
+                                                        <div class="content">
+                                                            <h5>Marvin McKinney</h5>
+                                                            <span>Product Manager</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="quate-image">
+                                                        <img src="assets/img/home-1/icon/07.svg" alt="img" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="testimonial-content">
+                                <div class="section-title mb-0">
+                                    <span class="sub-title wow fadeInUp">our hotel testimonials</span>
+                                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">What Our Guest’s Say</h2>
+                                </div>
+                                <div class="client-item">
+                                    <div class="group-image">
+                                        <img src="assets/img/home-1/testimonial/group.png" alt="img" />
+                                    </div>
+                                    <h6>
+                                        More then <span class="odometer" data-count="25">00</span><b>k</b> <br />
+                                        clients Reviews
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section-2 section-padding fix news-bg">
+            <div class="container">
+                <div class="section-title-area">
+                    <div class="section-title">
+                        <span class="sub-title sub-title-2 wow fadeInUp">news & blog</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest News & Articles</h2>
+                    </div>
+                    <a href="news-grid.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">VIEW ALL ARTICLES</a>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="news-card-items-2">
+                            <div class="news-image">
+                                <img src="assets/img/home-2/news/01.jpg" alt="img" />
+                                <div class="post-box">
+                                    <h4>17<br /><span>April</span></h4>
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <ul class="news-meta">
+                                    <li>
+                                        <img src="assets/img/home-2/arrow.png" alt="img" />
+                                        By Admin
+                                    </li>
+                                    <li class="style-2">Business</li>
+                                </ul>
+                                <h4>
+                                    <a href="news-details.html"> Why Our Hotel Is Ideal for Remote Work Travelers </a>
+                                </h4>
+                                <a href="news-details.html" class="link-btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="news-card-items-2">
+                            <div class="news-image">
+                                <img src="assets/img/home-2/news/02.jpg" alt="img" />
+                                <div class="post-box">
+                                    <h4>17<br /><span>April</span></h4>
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <ul class="news-meta">
+                                    <li>
+                                        <img src="assets/img/home-2/arrow.png" alt="img" />
+                                        By Admin
+                                    </li>
+                                    <li class="style-2">City Hotel</li>
+                                </ul>
+                                <h4>
+                                    <a href="news-details.html"> The Best Coffee Shops Within Walking Distance </a>
+                                </h4>
+                                <a href="news-details.html" class="link-btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="news-card-items-2">
+                            <div class="news-image">
+                                <img src="assets/img/home-2/news/03.jpg" alt="img" />
+                                <div class="post-box">
+                                    <h4>17<br /><span>April</span></h4>
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <ul class="news-meta">
+                                    <li>
+                                        <img src="assets/img/home-2/arrow.png" alt="img" />
+                                        By Admin
+                                    </li>
+                                    <li class="style-2">Business</li>
+                                </ul>
+                                <h4>
+                                    <a href="news-details.html">
+                                        5 Relaxing Things to Do After a Busy Day in the City
+                                    </a>
+                                </h4>
+                                <a href="news-details.html" class="link-btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="instagram-section-2 section-padding pb-0 fix">
+            <div class="swiper instagram-banner-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/01.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/02.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/03.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/04.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/05.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/home-1/instagram/06.jpg" alt="insta-img" />
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-section fix bg-cover" style="background-image: url(assets/img/home-1/footer.jpg)">
+            <div class="container">
+                <div class="footer-newsletter">
+                    <div class="newsletter-content">
+                        <h3>Get newsletter from hotel</h3>
+                        <p>
+                            At Serenova, we believe luxury is not just a destination—it’s a feeling, an experience, and
+                            a way of life
+                        </p>
+                    </div>
+                    <form action="#">
+                        <div class="form-clt">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" name="email" id="email" placeholder="enter your email" />
+                            <button type="submit" class="theme-btn">subscribe now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-widget-wrapper">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>About us</h5>
+                                </div>
+                                <div class="footer-content">
+                                    <p>
+                                        Welcome to Serenova, your trusted platform for discovering and booking the best
+                                        hotels around the world. Since our journey began.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>hotel best services</h5>
+                                </div>
+                                <ul class="list">
+                                    <li>
+                                        <a href="service-details.html">Airport pickup & drop</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-details.html">Room booking</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-details.html">special offers</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-details.html">special foods</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 ps-lg-5 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>check in & out time</h5>
+                                </div>
+                                <ul class="date-list">
+                                    <li>Mon to Fri : <span class="style-1">08:00 - 11:00</span></li>
+                                    <li>Saturday : <span>08:00 - 11:00</span></li>
+                                    <li>Sunday : <span class="style-3">Closed</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 ps-lg-5 col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>Contact Us</h5>
+                                </div>
+                                <ul class="contact-item">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        UK, 1212; 102/B New Elephant <br />
+                                        Road London
+                                    </li>
+                                    <li class="style-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:exmplor@gmail.com">exmplor@gmail.com</a>
+                                    </li>
+                                    <li class="style-2">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="tel:+1234567879967">+123 456 7879 967</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-wrapper">
+                        <div class="social-icon wow fadeInLeft" data-wow-delay=".3s">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="contact.html">Terms & Conditions</a>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <a href="contact.html">Privacy Policy</a>
+                            </li>
+                            <li>/</li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <p class="wow fadeInRight" data-wow-delay=".7s">
+                            Copyright © 2026 <span>Serenova</span>. Developed by <span>Atik Masud</span>
+                        </p>
+                    </div>
+                    <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                        <img src="assets/img/logo/white-logo.svg" alt="img" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/i18n-data.js"></script>
+        <script src="assets/js/i18n.js"></script>
+    </body>
+</html>
